@@ -31,7 +31,7 @@ module.exports = () => {
         publicPath: './',
         icons: [
           {
-            src: path.resolve('src/assets/icon.png'),
+            src: path.resolve('src/images'),
             sizes: [96, 128, 192, 256, 384, 512] // Adjust sizes as needed
           }
         ]
