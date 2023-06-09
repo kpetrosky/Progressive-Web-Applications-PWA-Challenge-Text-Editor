@@ -37,7 +37,7 @@ module.exports = () => {
         ]
       }),
       new InjectManifest({
-        swSrc: './src/js/sw.js',
+        swSrc: './src/js',
         exclude: [/\.map$/, /_redirects/] // Adjust exclusions as needed
       })
     ],
