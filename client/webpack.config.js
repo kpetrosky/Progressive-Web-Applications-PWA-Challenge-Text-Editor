@@ -27,18 +27,19 @@ module.exports = () => {
         description: 'Never forget your contacts!',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        start_url: './',
-        publicPath: './',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
-            src: path.resolve('src/images'),
+            src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512] // Adjust sizes as needed
           }
         ]
       }),
       new InjectManifest({
-        swSrc: './src/js',
-        exclude: [/\.map$/, /_redirects/] // Adjust exclusions as needed
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js'
+        // Adjust exclusions as needed
       })
     ],
 

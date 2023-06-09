@@ -32,7 +32,7 @@ export const getDb = async () => {
   const store = tx.objectStore('jate');
   const content = await store.getAll();
   await tx.complete;
-  return content;
+  return content?.value;
 };
 
 
