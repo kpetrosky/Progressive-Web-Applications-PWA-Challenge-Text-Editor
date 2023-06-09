@@ -20,11 +20,15 @@ module.exports = () => {
         title: 'Contact Cards'
       }),
       new WebpackPwaManifest({
-        name: 'My App',
-        short_name: 'App',
-        description: 'My Progressive Web App',
-        background_color: '#ffffff',
-        theme_color: '#000000',
+        fingerprints: false,
+        inject: true,
+        name: 'Contact Cards',
+        short_name: 'Contact',
+        description: 'Never forget your contacts!',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
+        start_url: './',
+        publicPath: './',
         icons: [
           {
             src: path.resolve('src/assets/icon.png'),
